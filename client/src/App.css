@@ -1,0 +1,47 @@
+.App {
+  text-align: center;
+  background-color: #ffffff;
+  width: 100%;
+  display: flex;
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  font-size: calc(20px + 2vmin);
+  width: 50%;
+  float: left;
+}
+
+.date {
+  align-self: center;
+  color: rgb(0, 0, 255);
+  font-size: 18px;
+  line-height: 0;
+  margin-left: 90px;
+  text-align: left;
+}
+
+.time {
+  color: rgb(0, 255, 0);
+  font-size: 120px;
+  line-height: 1;
+  margin: 20px;
+  margin-top: auto;
+  align-self: center;
+}
+
+.camera {
+  width: 320px; /* Atur lebar video */
+  height: 240px; /* Atur tinggi video */
+}
+
+.id{
+  width: 50%;
+  height: auto;
+  float: right;
+  align-self: center;
+}
