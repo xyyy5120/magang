@@ -7,7 +7,7 @@ import React, { useState, useEffect, useRef } from 'react';
 const Camera = () => {
   const videoRef = useRef(null);
   const [error, setError] = useState(null);
-
+//meow
   useEffect(() => {
     const constraints = {
       video: true
