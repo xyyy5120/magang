@@ -52,16 +52,12 @@ function App() {
   const [status, setStatus] = useState('');
   const handleCheckStatus = async () => {
     try {
-        const response = await axios.post('http://localhost:8080/checkStatus', { data: 'Hello from React' });
-        console.log('Response from server:', response.data);
-        axios.get('http://localhost:8080/yea')
-        .then(response=>{
-          setStatus(response.data)
-        })
-        
+      const response = await axios.post('http://localhost:5000/checkStatus', { data: 'Hello from React' });
+      console.log('Response from server:', response.data);
+      setStatus(response.data.status);  // Assuming server returns status
     } catch (error) {
-        console.error('Error checking status:', error);
-        setStatus('Error');
+      console.error('Error checking status:', error);
+      setStatus('Error');
     }
   };
   

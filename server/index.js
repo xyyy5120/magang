@@ -82,7 +82,3 @@ app.post('/checkStatus', (req, res) => {
             res.status(500).json({ error: 'Internal Server Error' }); // Send an error response
           }
   });
-
-
-
-
