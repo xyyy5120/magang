@@ -88,7 +88,8 @@ function importAll(r) {
     <div className="App">
       <div className="App-header">
         <DateTime />
-        <Camera className="camera"/>
+        {/* <Camera className="camera"/> */}
+        <img src={'http://localhost:4444/video_feed'} alt="logo" />
       </div>
       <div className='id'>
         {<img src={selfo} alt={selper} className='image' />}
